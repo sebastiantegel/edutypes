@@ -15,7 +15,11 @@
     "build": "rollup -c",
     "publish": "npm publish --access public"
   },
-  "keywords": [],
+  "keywords": [
+    "Type",
+    "class",
+    "Typescript"
+  ],
   "author": "Sebatian Tegel",
   "license": "ISC",
   "type": "commonjs",
