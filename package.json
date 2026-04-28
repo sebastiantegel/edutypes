@@ -1,12 +1,19 @@
 {
   "name": "@sebastiantegel/edutypes",
   "version": "2.0.2",
-  "main": "dist/index.cjs",
+  "main": "./dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -22,7 +29,7 @@
   ],
   "author": "Sebatian Tegel",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "description": "A package for datatypes for educational purposes",
   "devDependencies": {
     "@rollup/plugin-typescript": "^12.1.2",
